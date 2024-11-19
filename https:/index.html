@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews Slider</title>
+  <style>
+    .review-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 16px;
+      padding: 16px;
+      background-color: #ffffff;
+    }
+    .review {
+      min-width: 300px;
+      flex-shrink: 0;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      scroll-snap-align: start;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .review h4 {
+      margin: 0 0 8px;
+    }
+    .review p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>What our customers are saying</h2>
+  <div class="review-slider">
+    <div class="review">
+      <h4>John Doe</h4>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Great service and very fast delivery!"</p>
+    </div>
+    <div class="review">
+      <h4>Jane Smith</h4>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Excellent customer support and quality products."</p>
+    </div>
+    <div class="review">
+      <h4>Michael Johnson</h4>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Highly recommend this company for their professionalism."</p>
+    </div>
+  </div>
+</body>
+</html>
